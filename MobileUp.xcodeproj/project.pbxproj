@@ -10,7 +10,6 @@
 		C3331C2AF48978FB12E023EF /* Pods_MobileUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */; };
 		FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2529E7072800B74379 /* AppDelegate.swift */; };
 		FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2729E7072800B74379 /* SceneDelegate.swift */; };
-		FEA14E2A29E7072800B74379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2929E7072800B74379 /* ViewController.swift */; };
 		FEA14E2D29E7072800B74379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA14E2B29E7072800B74379 /* Main.storyboard */; };
 		FEA14E2F29E7072A00B74379 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA14E2E29E7072A00B74379 /* Assets.xcassets */; };
 		FEA14E3229E7072A00B74379 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA14E3029E7072A00B74379 /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 		FEA14E2229E7072800B74379 /* MobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA14E2529E7072800B74379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA14E2729E7072800B74379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FEA14E2929E7072800B74379 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEA14E2C29E7072800B74379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEA14E2E29E7072A00B74379 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA14E3129E7072A00B74379 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,7 +46,6 @@
 				A6D9DE16B0A5C799D1097215 /* Pods-MobileUp.debug.xcconfig */,
 				4D466CDFF3B8D3742F224B30 /* Pods-MobileUp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -58,6 +55,38 @@
 				3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE28EDC329E70A0A00F5BB6D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FEA14E2529E7072800B74379 /* AppDelegate.swift */,
+				FEA14E2729E7072800B74379 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FE28EDC429E70A1700F5BB6D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FE28EDC529E70A2200F5BB6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FEA14E2B29E7072800B74379 /* Main.storyboard */,
+				FEA14E3029E7072A00B74379 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE28EDC629E70A3100F5BB6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		FEA14E1929E7072800B74379 = {
@@ -81,12 +110,11 @@
 		FEA14E2429E7072800B74379 /* MobileUp */ = {
 			isa = PBXGroup;
 			children = (
-				FEA14E2529E7072800B74379 /* AppDelegate.swift */,
-				FEA14E2729E7072800B74379 /* SceneDelegate.swift */,
-				FEA14E2929E7072800B74379 /* ViewController.swift */,
-				FEA14E2B29E7072800B74379 /* Main.storyboard */,
+				FE28EDC329E70A0A00F5BB6D /* Application */,
+				FE28EDC429E70A1700F5BB6D /* ViewControllers */,
+				FE28EDC529E70A2200F5BB6D /* Views */,
+				FE28EDC629E70A3100F5BB6D /* Cells */,
 				FEA14E2E29E7072A00B74379 /* Assets.xcassets */,
-				FEA14E3029E7072A00B74379 /* LaunchScreen.storyboard */,
 				FEA14E3329E7072A00B74379 /* Info.plist */,
 			);
 			path = MobileUp;
@@ -207,7 +235,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA14E2A29E7072800B74379 /* ViewController.swift in Sources */,
 				FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */,
 				FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */,
 			);
