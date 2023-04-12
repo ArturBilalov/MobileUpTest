@@ -13,6 +13,8 @@
 		FE7320D329E70CAE00BE5A88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320D129E70CAE00BE5A88 /* LoginViewController.swift */; };
 		FE7320D429E70CAE00BE5A88 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7320D229E70CAE00BE5A88 /* LoginView.xib */; };
 		FE7320D629E7102B00BE5A88 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320D529E7102B00BE5A88 /* CollectionViewController.swift */; };
+		FE7320D829E7115A00BE5A88 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320D729E7115A00BE5A88 /* PhotosCollectionViewCell.swift */; };
+		FE7320DA29E711A900BE5A88 /* ExpandedPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320D929E711A900BE5A88 /* ExpandedPhotoCell.swift */; };
 		FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2529E7072800B74379 /* AppDelegate.swift */; };
 		FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2729E7072800B74379 /* SceneDelegate.swift */; };
 		FEA14E2D29E7072800B74379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA14E2B29E7072800B74379 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		FE7320D129E70CAE00BE5A88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FE7320D229E70CAE00BE5A88 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		FE7320D529E7102B00BE5A88 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		FE7320D729E7115A00BE5A88 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		FE7320D929E711A900BE5A88 /* ExpandedPhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedPhotoCell.swift; sourceTree = "<group>"; };
 		FEA14E2229E7072800B74379 /* MobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA14E2529E7072800B74379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA14E2729E7072800B74379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		FE28EDC629E70A3100F5BB6D /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FE7320D729E7115A00BE5A88 /* PhotosCollectionViewCell.swift */,
+				FE7320D929E711A900BE5A88 /* ExpandedPhotoCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -255,8 +261,10 @@
 				FE7320D329E70CAE00BE5A88 /* LoginViewController.swift in Sources */,
 				FE7320CF29E70C5E00BE5A88 /* WelcomeViewController.swift in Sources */,
 				FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */,
+				FE7320DA29E711A900BE5A88 /* ExpandedPhotoCell.swift in Sources */,
 				FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */,
 				FE7320D629E7102B00BE5A88 /* CollectionViewController.swift in Sources */,
+				FE7320D829E7115A00BE5A88 /* PhotosCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
