@@ -28,5 +28,4 @@ class WelcomeViewController: UIViewController {
         let loginVC = LoginViewController()
         navigationController?.pushViewController(loginVC, animated: false)
     }
-    
 }

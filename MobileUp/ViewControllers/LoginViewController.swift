@@ -29,7 +29,7 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
         
         // Определяем адрес страницы авторизации
         let authURL = "https://oauth.vk.com/authorize?" +
-        "client_id=51611346" +
+        "client_id=51612483" +
         "redirect_uri=https://oauth.vk.com/blank.html&" +
         "scope=friends,photos&" +
         "response_type=token&" +
@@ -81,7 +81,7 @@ class LoginViewController: UIViewController, WKNavigationDelegate {
     func showPhotosVC() {
         
         let photosVC = CollectionViewController()
-//        photosVC.accessToken = tokenForMyVC
+        photosVC.accessToken = tokenForMyVC
         self.navigationController?.pushViewController(photosVC, animated: true)
         
     }
