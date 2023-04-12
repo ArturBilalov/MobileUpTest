@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C3331C2AF48978FB12E023EF /* Pods_MobileUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */; };
+		FE7320CF29E70C5E00BE5A88 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320CD29E70C5E00BE5A88 /* WelcomeViewController.swift */; };
+		FE7320D029E70C5E00BE5A88 /* WelcomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7320CE29E70C5E00BE5A88 /* WelcomeView.xib */; };
+		FE7320D329E70CAE00BE5A88 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7320D129E70CAE00BE5A88 /* LoginViewController.swift */; };
+		FE7320D429E70CAE00BE5A88 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7320D229E70CAE00BE5A88 /* LoginViewController.xib */; };
 		FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2529E7072800B74379 /* AppDelegate.swift */; };
 		FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2729E7072800B74379 /* SceneDelegate.swift */; };
 		FEA14E2D29E7072800B74379 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA14E2B29E7072800B74379 /* Main.storyboard */; };
@@ -19,6 +23,10 @@
 		3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D466CDFF3B8D3742F224B30 /* Pods-MobileUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileUp.release.xcconfig"; path = "Target Support Files/Pods-MobileUp/Pods-MobileUp.release.xcconfig"; sourceTree = "<group>"; };
 		A6D9DE16B0A5C799D1097215 /* Pods-MobileUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileUp.debug.xcconfig"; path = "Target Support Files/Pods-MobileUp/Pods-MobileUp.debug.xcconfig"; sourceTree = "<group>"; };
+		FE7320CD29E70C5E00BE5A88 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		FE7320CE29E70C5E00BE5A88 /* WelcomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeView.xib; sourceTree = "<group>"; };
+		FE7320D129E70CAE00BE5A88 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FE7320D229E70CAE00BE5A88 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FEA14E2229E7072800B74379 /* MobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA14E2529E7072800B74379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA14E2729E7072800B74379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +77,10 @@
 		FE28EDC429E70A1700F5BB6D /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FE7320CD29E70C5E00BE5A88 /* WelcomeViewController.swift */,
+				FE7320CE29E70C5E00BE5A88 /* WelcomeView.xib */,
+				FE7320D129E70CAE00BE5A88 /* LoginViewController.swift */,
+				FE7320D229E70CAE00BE5A88 /* LoginViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -180,7 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7320D429E70CAE00BE5A88 /* LoginViewController.xib in Resources */,
 				FEA14E3229E7072A00B74379 /* LaunchScreen.storyboard in Resources */,
+				FE7320D029E70C5E00BE5A88 /* WelcomeView.xib in Resources */,
 				FEA14E2F29E7072A00B74379 /* Assets.xcassets in Resources */,
 				FEA14E2D29E7072800B74379 /* Main.storyboard in Resources */,
 			);
@@ -235,6 +249,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7320D329E70CAE00BE5A88 /* LoginViewController.swift in Sources */,
+				FE7320CF29E70C5E00BE5A88 /* WelcomeViewController.swift in Sources */,
 				FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */,
 				FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */,
 			);
