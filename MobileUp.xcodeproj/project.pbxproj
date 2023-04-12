@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C3331C2AF48978FB12E023EF /* Pods_MobileUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */; };
 		FEA14E2629E7072800B74379 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2529E7072800B74379 /* AppDelegate.swift */; };
 		FEA14E2829E7072800B74379 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2729E7072800B74379 /* SceneDelegate.swift */; };
 		FEA14E2A29E7072800B74379 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA14E2929E7072800B74379 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D466CDFF3B8D3742F224B30 /* Pods-MobileUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileUp.release.xcconfig"; path = "Target Support Files/Pods-MobileUp/Pods-MobileUp.release.xcconfig"; sourceTree = "<group>"; };
+		A6D9DE16B0A5C799D1097215 /* Pods-MobileUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileUp.debug.xcconfig"; path = "Target Support Files/Pods-MobileUp/Pods-MobileUp.debug.xcconfig"; sourceTree = "<group>"; };
 		FEA14E2229E7072800B74379 /* MobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA14E2529E7072800B74379 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEA14E2729E7072800B74379 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3331C2AF48978FB12E023EF /* Pods_MobileUp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A77BDFB8288C4960BAD3BC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D9DE16B0A5C799D1097215 /* Pods-MobileUp.debug.xcconfig */,
+				4D466CDFF3B8D3742F224B30 /* Pods-MobileUp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FDC5373BC99114CF9F907FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AAC895BE1C55B47AACAF9F9 /* Pods_MobileUp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FEA14E1929E7072800B74379 = {
 			isa = PBXGroup;
 			children = (
 				FEA14E2429E7072800B74379 /* MobileUp */,
 				FEA14E2329E7072800B74379 /* Products */,
+				3A77BDFB8288C4960BAD3BC7 /* Pods */,
+				FDC5373BC99114CF9F907FE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FEA14E3629E7072A00B74379 /* Build configuration list for PBXNativeTarget "MobileUp" */;
 			buildPhases = (
+				766DFA00E7E54B4E8C8A2C22 /* [CP] Check Pods Manifest.lock */,
 				FEA14E1E29E7072800B74379 /* Sources */,
 				FEA14E1F29E7072800B74379 /* Frameworks */,
 				FEA14E2029E7072800B74379 /* Resources */,
+				255EB55BEA2463914581B582 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		255EB55BEA2463914581B582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileUp/Pods-MobileUp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileUp/Pods-MobileUp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileUp/Pods-MobileUp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		766DFA00E7E54B4E8C8A2C22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileUp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FEA14E1E29E7072800B74379 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		FEA14E3729E7072A00B74379 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D9DE16B0A5C799D1097215 /* Pods-MobileUp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +365,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +381,7 @@
 		};
 		FEA14E3829E7072A00B74379 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D466CDFF3B8D3742F224B30 /* Pods-MobileUp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +395,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
