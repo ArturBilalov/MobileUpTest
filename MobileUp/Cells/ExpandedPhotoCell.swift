@@ -63,6 +63,17 @@ class ExpandedPhotoCell: UIView {
         return button
     }()
     
+    lazy var buttonSave: UIImageView = {
+        let button = UIImageView()
+        button.image = UIImage(systemName: "square.and.arrow.down.on.square")
+        button.tintColor = .black
+        button.alpha = 1
+        button.isUserInteractionEnabled = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
+    
     private var pinchGesture = UIPinchGestureRecognizer()
 
     
@@ -90,6 +101,7 @@ class ExpandedPhotoCell: UIView {
         self.addSubview(imageExpandedCell)
         self.addSubview(buttonCancel)
         self.addSubview(buttonShare)
+        self.addSubview(buttonSave)
         
         self.addSubview(dateLabel)
         
@@ -106,11 +118,14 @@ class ExpandedPhotoCell: UIView {
             buttonCancel.heightAnchor.constraint(equalToConstant: 30),
             
             buttonShare.topAnchor.constraint(equalTo: self.topAnchor),
-            buttonShare.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
+            buttonShare.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 15),
             buttonShare.widthAnchor.constraint(equalToConstant: 30),
             buttonShare.heightAnchor.constraint(equalToConstant: 30),
             
-            
+            buttonSave.topAnchor.constraint(equalTo: self.topAnchor),
+            buttonSave.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 60),
+            buttonSave.widthAnchor.constraint(equalToConstant: 30),
+            buttonSave.heightAnchor.constraint(equalToConstant: 30),
             
             dateLabel.topAnchor.constraint(equalTo: self.topAnchor),
             dateLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
@@ -135,12 +150,17 @@ class ExpandedPhotoCell: UIView {
     private func setupGesture() {
         pressButtonCancel.addTarget(self, action: #selector(pressedButton(_:)))
         buttonCancel.addGestureRecognizer(pressButtonCancel)
-        
+        buttonSave.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(saveImage)))
         buttonShare.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(shareImage)))
     }
     
     @objc func pressedButton(_ gestureRecognizer: UITapGestureRecognizer) {
         delegate?.pressedButton(view: self)
+    }
+    
+    @objc func saveImage() {
+        guard let image = imageExpandedCell.image else { return }
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
     }
     
     

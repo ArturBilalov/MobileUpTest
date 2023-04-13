@@ -415,6 +415,7 @@
 				DEVELOPMENT_TEAM = W3N3F8B6HF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Это разрешение нужно для сохранения фотографий в галерею, чтобы вы могли легко найти их позже";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -445,6 +446,7 @@
 				DEVELOPMENT_TEAM = W3N3F8B6HF;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MobileUp/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Это разрешение нужно для сохранения фотографий в галерею, чтобы вы могли легко найти их позже";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
